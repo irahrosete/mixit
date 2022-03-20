@@ -1,11 +1,11 @@
 const Footer = () => {
     let year = new Date().getFullYear()
 
-    return ( 
+    return (
         <footer>
             <p>Copyright {year} Mix It </p>
         </footer>
-     );
+    )
 }
- 
-export default Footer;
+
+export default Footer
