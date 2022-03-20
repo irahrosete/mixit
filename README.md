@@ -6,6 +6,6 @@
 - Learn more about a specific ingredient
 - Discover other cocktails using the same specific ingredient
 
-url: https://mix-it.vercel.app/
+url: https://mixit.vercel.app/
 
 api: [TheCocktailDB](https://www.thecocktaildb.com/api.php)
