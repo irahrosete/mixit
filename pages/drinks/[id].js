@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export const getStaticPaths = async () => {
     const letter = Math.random().toString(36).replace(/[^a-z]+/g, '').substring(0, 1) || 'g'
-    const res = await fetch(apiDrinkByLetter + 'g')
+    const res = await fetch(apiDrinkByLetter + 'm')
 
     const data = await res.json()
 
@@ -35,7 +35,6 @@ const DrinkDetail = ({ drink }) => {
         <>
         <h1 className='title'>Enjoy your drink!</h1>
         <div className={styles.single}>
-            {console.log(drink)}
             <h2 className='title'>{drink.strDrink}</h2>
             <div className={styles.center}>
             <Image className={styles.image} src={drink.strDrinkThumb} alt='cocktail' width={500} height={500} />
