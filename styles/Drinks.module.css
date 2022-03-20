@@ -1,0 +1,22 @@
+.letter {
+    /* padding: 0 10px; */
+    color: #4979ff;
+}
+
+.letters {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 40px;
+}
+
+.single {
+    padding: 2px 16px;
+    background: #fff;
+    display: block;
+    margin: 20px 10px;
+    border-left: 8px solid #fff;
+}
+
+.single:hover {
+    border-left: 100px solid #4979ff;
+}

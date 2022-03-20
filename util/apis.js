@@ -1,3 +1,7 @@
-const apiRandom = 'https://www.thecocktaildb.com/api/json/v1/1/random.php'
+const apiRandomDrink = 'https://www.thecocktaildb.com/api/json/v1/1/random.php'
+const apiDrinkByName = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita'
+const apiDrinkByLetter = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?f='
+const apiDrinkByIng = 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Gin'
+const apiIngName = 'https://https://www.thecocktaildb.com/api/json/v1/1/search.php?i=gin'
 
-export {apiRandom}
+export {apiRandomDrink, apiDrinkByName, apiDrinkByLetter, apiDrinkByIng, apiIngName}
