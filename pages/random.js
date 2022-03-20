@@ -6,7 +6,6 @@ import styles from '../styles/Random.module.css'
 export const getStaticProps = async () => {
     const res = await fetch(apiRandomDrink)
     const data = await res.json()
-    console.log(data.drinks[0])
     return {
         props: { randomCocktail: data.drinks[0] }
     }
