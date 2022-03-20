@@ -4,8 +4,8 @@ import Link from "next/link"
 const Navbar = () => {
     return ( 
         <nav>
-            <div>
-                <Image />
+            <div className="logo">
+                <Image src='/logo.svg' width={128} height={77}/ >
             </div>
             <Link href='/'><a>Home</a></Link>
             <Link href='/about'><a>About</a></Link>
