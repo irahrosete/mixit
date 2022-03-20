@@ -11,16 +11,8 @@ export default function Home() {
       <div>
         <h1 className='title'>Mix It</h1>
         <p className='text'>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt,
-          recusandae libero debitis nemo voluptate cumque rem omnis nobis
-          cupiditate unde, odio reiciendis molestias velit, aspernatur atque id
-          corporis ab optio.
-        </p>
-        <p className='text'>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum
-          accusantium possimus voluptate harum, illum labore modi nihil quia
-          nostrum dolore perferendis mollitia assumenda recusandae aut? In
-          incidunt optio nostrum saepe.
+          Check a random drink to try. Find out what a drink is made of. Learn how to mix it and what glass to serve it with.
+          Learn more about a specific ingredient. Discover other drinks using the same ingredient. Be the star of the party!
         </p>
         <Link href='/random'>
           <a className='btn'>Random Drink</a>

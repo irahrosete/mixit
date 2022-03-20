@@ -2,7 +2,6 @@ import { apiRandomDrink } from '../util/apis'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Random.module.css'
-import { useState, useEffect } from 'react'
 
 export const getServerSideProps = async () => {
     const res = await fetch(apiRandomDrink)
@@ -13,21 +12,9 @@ export const getServerSideProps = async () => {
 }
 
 const Random = ({ randomDrink }) => {
-    // const [randomDrink, setRandomDrink] = useState()
-    // useEffect(() => {
-    //     const fetchData = async () => {
-    //         const res = await fetch(apiRandomDrink)
-    //         const data = await res.json()
-    //         console.log(data.drinks[0]);
-    //         setRandomDrink(data.drinks[0])
-    //     }
-    //     fetchData()
-    // }, [])
-
     return (<>
         <h1 className='title'>Enjoy your drink!</h1>
         <div className={styles.single}>
-            {/* {console.log(data.drinks[0])} */}
             <h2 className='title'>{randomDrink.strDrink}</h2>
             <div className={styles.center}>
                 <Image className={styles.image} src={randomDrink.strDrinkThumb} alt='cocktail' width={500} height={500} />
